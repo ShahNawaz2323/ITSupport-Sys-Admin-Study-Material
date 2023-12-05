@@ -1,4 +1,5 @@
 {\rtf1\ansi\ansicpg1252\deff0\nouicompat{\fonttbl{\f0\fnil\fcharset0 Calibri;}{\f1\fnil Calibri;}{\f2\fnil\fcharset2 Symbol;}}
+{\colortbl ;\red0\green0\blue255;}
 {\*\generator Riched20 10.0.19041}\viewkind4\uc1 
 \pard\li720\sa200\sl276\slmult1\qc\b\f0\fs22\lang9 Windows Commands: \par
 
@@ -246,6 +247,32 @@ Permissons:\ulnone\b0\par
 \pard\sa200\sl276\slmult1\par
 \ul\b Process Management:\par
 
-\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\ulnone\b0\par
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\ulnone\b0 programs are the applications that we can run, like the Chrome web browser. Processes are programs that are running. We can have lots of processes running for the same program. Like how we can have many Chrome windows open at once, or lots of movies playing using one program. When we launch a process, we're executing a program and remember, a program is just software.\par
+{\pntext\f2\'B7\tab}When you open up an application like a word processor, you're launching a process. That process is given something called a process ID to uniquely identify it from other processes. Our computer sees that the process needs hardware resources to run, so our kernel makes decisions to figure out what resources to give it. Then in the blink of an eye, our computer starts up a word processor and we're ready to start working. This happens for every process you launch yourself and for every process you don't even know is running. \par
+{\pntext\f2\'B7\tab}\b Background processes: =>\b0 There are also not so visible processes running. These are known as background processes, sometimes referred to as \b daemon \b0 processes. \b Background processes\b0  are processes that run in the background. We don't really see them and we don't interact with them, but our system needs them to function. They include processes like scheduling resources, logging, managing networks, and more.\par
+{\pntext\f2\'B7\tab}\b Windows: Process Creation and Termination: \b0 The way that processes are created and stopped differs based on the operating system you use. First, let's have a look at how Windows does things. When Windows boots up or starts, the first non kernel and user mode that starts as the Session Manager Subsystem or smss.exe. The smss.exe process is in charge of setting some stuff up for the OS to work. It then kicks off the login process called windlogon.exe appropriately enough. Along with the client server runtime subsystem called csrss.exe, which handles running the Windows GUI and command-line console. \par
+{\pntext\f2\'B7\tab}\b Environment:\b0  In Windows, each new process that's created needs a parent to tell the operating system that a new process needs to be made. The child process inherits some things from its parent, like variables and settings, which we can collectively refer to as an environment.\par
+{\pntext\f2\'B7\tab}In Windows Mostly  child process not depend on the parent process after starting parent process if terminated, child process keep running.\par
+{\pntext\f2\'B7\tab}taskkill => utility to terminate the process\par
+{\pntext\f2\'B7\tab}PID => process ID\par
+{\pntext\f2\'B7\tab}taskkill /pid 5856 => kill command to terminate notepad process.\par
+{\pntext\f2\'B7\tab}Ends one or more tasks or processes. Processes can be ended by process ID or image name. You can use the tasklist command command to determine the process ID (PID) for the process to be ended.\par
+{\pntext\f2\'B7\tab}Examples: taskkill [/s <computer> [/u [<domain>\\]<username> [/p [<password>]]]] \{[/fi <filter>] [...] [/pid <processID> | /im <imagename>]\} [/f] [/t]\par
+{\pntext\f2\'B7\tab}taskkill /pid 1230 /pid 1241 /pid 1253\par
+{\pntext\f2\'B7\tab}taskkill /f /fi "USERNAME eq NT AUTHORITY\\SYSTEM" /im notepad.exe\par
+{\pntext\f2\'B7\tab}taskkill /s srvmain /u maindom\\hiropln /p p@ssW23 /fi "IMAGENAME eq note*" /im *\par
+{\pntext\f2\'B7\tab}taskkill /pid 2134 /t /fi "username eq administrator"\par
+{\pntext\f2\'B7\tab}taskkill /f /fi "PID ge 1000" /im * => greater than PID 1000 eliminated.\par
+{\pntext\f2\'B7\tab}\b Windows: Reading Process Information:\par
+{\pntext\f2\'B7\tab}\b0 Ctrl + shift + Esc => keys to open Task Manager\b\par
+{\pntext\f2\'B7\tab}\b0 In task manager you can view the pid number using details tab.\b\par
+{\pntext\f2\'B7\tab}\b0 tasklist => in the cmd and get_process => used in the power shell => to view all processes.\b\par
+{\pntext\f2\'B7\tab}\b0 Get-Process winword, explorer | Format-List *\b\par
+{\pntext\f2\'B7\tab}\b0 Get-Process -Id 664, 2060\b\par
+{\pntext\f2\'B7\tab}{\b0{\field{\*\fldinst{HYPERLINK https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.management/get-process?view=powershell-5.1 }}{\fldrslt{https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.management/get-process?view=powershell-5.1\ul0\cf0}}}}\f0\fs22\par
+{\pntext\f2\'B7\tab}\b0 $A = Get-Process\par
+{\pntext\f2\'B7\tab}$A | Get-Process | Format-Table -View priority\b\par
+{\pntext\f2\'B7\tab}Windows: Signals:\par
+{\pntext\f2\'B7\tab}\par
 }
  
