@@ -1,0 +1,289 @@
+{\rtf1\ansi\ansicpg1252\deff0\nouicompat{\fonttbl{\f0\fnil\fcharset0 Calibri;}{\f1\fnil\fcharset2 Symbol;}}
+{\colortbl ;\red0\green0\blue255;}
+{\*\generator Riched20 10.0.19041}\viewkind4\uc1 
+\pard\sa200\sl276\slmult1\qc\ul\b\f0\fs22\lang9 Linux Commands:\par
+
+\pard\sa200\sl276\slmult1 Directories:\ulnone\b0\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1 / root directory\par
+{\pntext\f1\'B7\tab}ls / , list all directories\par
+{\pntext\f1\'B7\tab}etc , configuration  files\par
+{\pntext\f1\'B7\tab}proc, running processes files\par
+{\pntext\f1\'B7\tab}flag used for additional parameters  like ls --help\par
+{\pntext\f1\'B7\tab}bin , important binaries of files\par
+{\pntext\f1\'B7\tab}man pages, like man ls use  to get info about something ls command\par
+{\pntext\f1\'B7\tab}list of directories with information, ls -l ,\par
+{\pntext\f1\'B7\tab}addionational information and hidden files as well, ls -la or ls -l -a\par
+{\pntext\f1\'B7\tab}-a flag all shows all the files\par
+
+\pard\sa200\sl276\slmult1\par
+\ul\b Linux Changing directories and dir Navigation:\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\ulnone pwd => print working directory\ul\par
+{\pntext\f1\'B7\tab}\ulnone cd => change directory\ul\par
+{\pntext\f1\'B7\tab}\ulnone cd ../Documents relative moving\ul\par
+{\pntext\f1\'B7\tab}\ulnone cd ~/Desktop relative moving\ul\par
+{\pntext\f1\'B7\tab}\ulnone tab complete \ul\par
+
+\pard\sa200\sl276\slmult1\par
+CRUD Operations on Directories:\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\ulnone\b0 mkdir file_name\par
+{\pntext\f1\'B7\tab}mkdir my \\ cool\\  folder\par
+{\pntext\f1\'B7\tab}mkdir 'my cool folder'  => another way to make directories\par
+{\pntext\f1\'B7\tab}Ctrl + R to search commands\par
+{\pntext\f1\'B7\tab}history => list all old command\par
+{\pntext\f1\'B7\tab}clear => clear screen\par
+{\pntext\f1\'B7\tab}cp => for copy, For example: cp filesName  Destination address => cp my_folder ~/Desktop\par
+{\pntext\f1\'B7\tab}WildCards to select all: *  aystrick\par
+{\pntext\f1\'B7\tab}like : cp *.filetype destination path\par
+{\pntext\f1\'B7\tab}cp *.png  ~/Desktop\par
+{\pntext\f1\'B7\tab}cp -r  'picture folder'  ~/Desktop\par
+{\pntext\f1\'B7\tab}Moving and renaming files using mv command\par
+{\pntext\f1\'B7\tab}mv .\\blue_document.txt  yellow_document.txt\par
+{\pntext\f1\'B7\tab}mv .\\blue_document.txt  C:\\Users\\Shah\\Desktop\par
+{\pntext\f1\'B7\tab}mv  *_document.txt  C:\\Users\\Shah\\Desktop\par
+{\pntext\f1\'B7\tab}Removing files using => rm or remove\par
+{\pntext\f1\'B7\tab}rm ~\\text.txt \par
+{\pntext\f1\'B7\tab}rm ~\\text.txt -f\par
+{\pntext\f1\'B7\tab}rm -r ~\\textdirectory\par
+
+\pard\sa200\sl276\slmult1\par
+\ul\b File and Text Manipulation:\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\ulnone\b0 cat or less command to display text on terminal\par
+{\pntext\f1\'B7\tab}Enter key let you scroll line by line and space page\par
+{\pntext\f1\'B7\tab}q key to quit out less command\par
+{\pntext\f1\'B7\tab}/ => to search\par
+{\pntext\f1\'B7\tab}head fruits.txt\par
+{\pntext\f1\'B7\tab}tail fruits.txt \par
+{\pntext\f1\'B7\tab}nano => files editor tool in command lind\par
+{\pntext\f1\'B7\tab}searching Within files =>  using grep command\par
+{\pntext\f1\'B7\tab}example => grep wordtoSearch filename\par
+{\pntext\f1\'B7\tab}grep cow *_animal.txt => search thorough wild card use , all search\par
+
+\pard\sa200\sl276\slmult1\par
+\ul\b Input, Output and pipeline:\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\ulnone\b0 echo woof  > dog.txt => save word in the file\par
+{\pntext\f1\'B7\tab}cat dog.txt\par
+{\pntext\f1\'B7\tab}> redirected operator\par
+{\pntext\f1\'B7\tab}>> used to Append information in already existed file\par
+{\pntext\f1\'B7\tab}/dev/null\par
+{\pntext\f1\'B7\tab}ls -la  /etc  | grep bluetooth\par
+{\pntext\f1\'B7\tab}The grep command is a filter that is used to search for lines matching a specified pattern and print the matching lines to standard output.\par
+
+\pard\sa200\sl276\slmult1\par
+\ul\b Users and Groups:\ulnone\b0\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1 root user/default user, standard user and admi user\par
+{\pntext\f1\'B7\tab}sudo or superuser => admin command\par
+{\pntext\f1\'B7\tab}cat /etc/suoers => only administrator or sudo level authority required to view it.\par
+{\pntext\f1\'B7\tab}sudo su - => root user change or subsitute user\par
+{\pntext\f1\'B7\tab}cat /etc/group => view all the group\par
+{\pntext\f1\'B7\tab}cat /etc/passwd => view all the user on the linux\par
+{\pntext\f1\'B7\tab}passwd username => change password command\par
+{\pntext\f1\'B7\tab}set user passwd to expire and change  on the next login=> sudo passwd -e name.\par
+{\pntext\f1\'B7\tab}\b Adding and Removing Users\b0  \par
+{\pntext\f1\'B7\tab}useradd username\par
+{\pntext\f1\'B7\tab}sudo userdel username\par
+{\pntext\f1\'B7\tab}\b Mobile Users Accounts\b0\par
+{\pntext\f1\'B7\tab}default account/Primary account, can be sign to additional accounts letter.\par
+{\pntext\f1\'B7\tab}some android support multiple profiles.\par
+{\pntext\f1\'B7\tab}MDM => mobile device management tool uses to handle and organize mobile devices\par
+
+\pard\sa200\sl276\slmult1\b\par
+\ul Permissons:\ulnone\b0\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1 Read: read the content of file.\par
+{\pntext\f1\'B7\tab}Write : write in the file permissions.\par
+{\pntext\f1\'B7\tab}Execute: execution of file permitted permission.\par
+{\pntext\f1\'B7\tab}ls -l => long file to see the file permissions => ls -l /filename.\par
+{\pntext\f1\'B7\tab}-rwxrw-r-- 1 => 10 bit information of the file permissions in the linux\par
+{\pntext\f1\'B7\tab}-rwx => owner's permissions, rw=> group information, -r-- => rest of the users permissions.\par
+{\pntext\f1\'B7\tab}1=> bit is enabled.\par
+{\pntext\f1\'B7\tab}\b Linux: Modifying Permissions\par
+{\pntext\f1\'B7\tab}\b0 we change the permission using the chmod command => chmod => channge mode command.\par
+{\pntext\f1\'B7\tab}owner denoted by => u\par
+{\pntext\f1\'B7\tab}group the file file belong to denoted by => g\par
+{\pntext\f1\'B7\tab}other users denoted by => o\par
+{\pntext\f1\'B7\tab}use plus or minus symbol to add or remove permissions => + or -\par
+{\pntext\f1\'B7\tab}ls-l => first check the permissions \par
+{\pntext\f1\'B7\tab}chmod u+x file_name => make file excutable\par
+{\pntext\f1\'B7\tab}chmod u-x file_name => remove excecute permission\par
+{\pntext\f1\'B7\tab}chmod g+r file_name => give permissions of read to group.\par
+{\pntext\f1\'B7\tab}chmod o+r file_name => give permissions to other users\par
+{\pntext\f1\'B7\tab}chmod u+rx file_name => add multiple permissions\par
+{\pntext\f1\'B7\tab}chmod u-rx file_name => remove multiple permissions\par
+{\pntext\f1\'B7\tab}chmod ugo+r file_name => give permissions to multiple users\par
+{\pntext\f1\'B7\tab}numerical equivalent of rwx is => r= 4 , w= 2, e = 1\par
+{\pntext\f1\'B7\tab}chmod 754 file_Name => owner permitted to read(4),write(2) and execute(1) =>  5 for group to give read and execut permissions and=>  4 for other users to read only permission.\par
+{\pntext\f1\'B7\tab}chown => Change of owner command\par
+{\pntext\f1\'B7\tab}sudo chown userName File_Name\par
+{\pntext\f1\'B7\tab}chgrp => change group command\par
+{\pntext\f1\'B7\tab}sudo chgrp group_Name file_Name\par
+{\pntext\f1\'B7\tab}\b Special Permissions:\b0\par
+{\pntext\f1\'B7\tab}setUID => denoted by s => help to chnage file ownership, run file as the owner of the file.\par
+{\pntext\f1\'B7\tab}setGID and sticky bit. denoted by number at the end of the permissions.\par
+
+\pard\sa200\sl276\slmult1\par
+\ul\b Software Packaging:\ulnone\b0\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1 Red Hat used package management tool => rpm, Different linux Distribution uses different Package Manager.\par
+{\pntext\f1\'B7\tab}Debian pakage manager which is used by Ubuntu => .deb.\par
+{\pntext\f1\'B7\tab}dpkg => debian pakage command.\par
+{\pntext\f1\'B7\tab}-i => flag is used for  installation like => sudo dpakg -i atom-amd64.deb.\par
+{\pntext\f1\'B7\tab}-r => remove flag =>  sudo dpakg -r atom => uninstall software\par
+{\pntext\f1\'B7\tab}dpakg -l => list all installed pakages.\par
+{\pntext\f1\'B7\tab}searh uning grep command => dpakg -l | grep atom => search only pakages matches the name.\par
+{\pntext\f1\'B7\tab}\b Archinves:\b0\par
+{\pntext\f1\'B7\tab}comprised of files that compressed in a signle file\par
+{\pntext\f1\'B7\tab}P7-zip => 7z version of linux.\par
+{\pntext\f1\'B7\tab}flage e used for to extract files\par
+{\pntext\f1\'B7\tab}7z e  ZipFileName => extract command\par
+{\pntext\f1\'B7\tab}.tar .zip .rar file types.\par
+{\pntext\f1\'B7\tab}tar tool already installed on the linux distributions.\par
+{\pntext\f1\'B7\tab}tar option(s) archive_name file_name(s)\par
+{\pntext\f1\'B7\tab}tar -cf file.tar file1 file2 file3\par
+{\pntext\f1\'B7\tab}tar -cvf file.tar file1 file2 file3\par
+{\pntext\f1\'B7\tab}\b Linux: Package Dependencies:\par
+{\pntext\f1\'B7\tab}\b0 Other Packages and shared libraries\b\par
+{\pntext\f1\'B7\tab}\b0 Package managers come with the works to make package installation and removal easier, including installing package dependencies. \b\par
+{\pntext\f1\'B7\tab}\b0 if you install a stand-alone package, you won't automatically install its dependencies.\b\par
+{\pntext\f1\'B7\tab}Common Linux package types include: \par
+{\pntext\f1\'B7\tab}\b0 .deb - Debian packages\par
+{\pntext\f1\'B7\tab}.rpm - Redhat packages\par
+{\pntext\f1\'B7\tab}.tgz - TAR archive file\par
+{\pntext\f1\'B7\tab}Linux Repository\par
+{\pntext\f1\'B7\tab}package manifests list the external dependencies needed by the package. \par
+{\pntext\f1\'B7\tab}The Linux dpkg command is used to build, install, manage, and remove packages in Debian or Debian-based systems. \par
+{\pntext\f1\'B7\tab} $ sudo dpkg - -install packagename  => to install.\par
+{\pntext\f1\'B7\tab}$ sudo dpkg - -update-avail packagename => locally saved package\par
+{\pntext\f1\'B7\tab}$ sudo dpkg - -remove packagename\par
+{\pntext\f1\'B7\tab}To purge a package, which removes the package and all files belonging to the package: $ sudo dpkg - -purge packagename\par
+{\pntext\f1\'B7\tab}$ sudo dpkg - -list => List all the packages installed.\par
+{\pntext\f1\'B7\tab}list the contents of a new package:=> $ sudo dpkg -contents packagename.\par
+{\pntext\f1\'B7\tab}\b Package Manager:\par
+{\pntext\f1\'B7\tab}\b0 apt, => advance package manager.\par
+{\pntext\f1\'B7\tab}sudo apt install gimp => install gimp on the machine and provide details.\par
+{\pntext\f1\'B7\tab}sudo apt remove gimp.\par
+{\pntext\f1\'B7\tab}Repositories are servers that act like a central storage location for packages.\par
+{\pntext\f1\'B7\tab}repository source file in the ubuntu is /etc/apt/sources.list\b\par
+{\pntext\f1\'B7\tab}\b0 special repositories=>  PPA => personal Package Archives => hosted on the lunchpad servers, open source repositories.\b\par
+{\pntext\f1\'B7\tab}\b0 update repositories using commands like apt update and apt upgrade.\b\par
+{\pntext\f1\'B7\tab}\b0 packageName --help to get the help about a package or package manager.\par
+{\pntext\f1\'B7\tab}\b Installation Background:\b0\par
+{\pntext\f1\'B7\tab}Some things that happen in the background when installing software include:\par
+{\pntext\f1\'B7\tab}Checking dependency lists\par
+{\pntext\f1\'B7\tab}Adding packages to the list to be installed\par
+{\pntext\f1\'B7\tab}Processing pre-defined scripts and programs\par
+{\pntext\f1\'B7\tab}Handling dependencies\par
+{\pntext\f1\'B7\tab}\b Linux: Devices and Drivers:\b0\par
+{\pntext\f1\'B7\tab}In Linux, everything is considered a file, even hardware devices. When a device is connected to your computer, a device file is created in the /dev directory. \par
+{\pntext\f1\'B7\tab}ls -l /dev\par
+{\pntext\f1\'B7\tab}character devices like keyboard and mouse, => denoted by c\par
+{\pntext\f1\'B7\tab}Block Devices like storage devices. => denoted by b\par
+{\pntext\f1\'B7\tab}. /dev/sda , . /dev/sdb , . /dev/sdc\par
+{\pntext\f1\'B7\tab}Kernal Module => extend the functionality of kernal for installing drivers without touching the actual kernal.\par
+{\pntext\f1\'B7\tab}/dev/sda - First SCSI drive\par
+{\pntext\f1\'B7\tab}/dev/sr0 - First optical disk drive \par
+{\pntext\f1\'B7\tab}/dev/usb - USB device\par
+{\pntext\f1\'B7\tab}/dev/usbhid - USB mouse\par
+{\pntext\f1\'B7\tab}/dev/usb/lp0 - USB printe\par
+{\pntext\f1\'B7\tab}/dev/null - discard\par
+{\pntext\f1\'B7\tab}daemon running in Linux that listens for kernel messages about devices connecting and disconnecting to the machine. \par
+{\pntext\f1\'B7\tab}From the command-line, enter $ lpadmin -p printername -m driverfilename.ppd \par
+{\pntext\f1\'B7\tab}Lpadmin is the printer administrator command.\par
+{\pntext\f1\'B7\tab}The -p printername command adds or modifies the named printer. \par
+{\pntext\f1\'B7\tab}The -m driverfilename.ppd command installs the postscript printer description (PPD) driver filename that you provide. The file should be stored in the /usr/share/cups/model/ directory.\par
+{\pntext\f1\'B7\tab}Enter $ man lpadmin to open the manual for the lpadmin command to find additional command line options.\par
+{\pntext\f1\'B7\tab}\b The most common way to check if a device is installed is to use the \ldblquote ls\rdblquote  (lowercase L and S) command, which means \ldblquote list\rdblquote . \par
+{\pntext\f1\'B7\tab}\b0 $ ls /dev - Lists all devices in the /dev folder \par
+{\pntext\f1\'B7\tab}$ lscpci - Lists devices installed on the PCI bus \par
+{\pntext\f1\'B7\tab}$ lsusb - Lists devices installed on the USB bus\par
+{\pntext\f1\'B7\tab}$ lsscsi - Lists SCSI devices, such as hard drives\par
+{\pntext\f1\'B7\tab}$ lpstat -p - Lists all printers and whether they are enabled\par
+{\pntext\f1\'B7\tab}$ dmesg - Lists devices recognized by the kernel\par
+{\pntext\f1\'B7\tab}\b Linux: Operating System Updates:\b0\par
+{\pntext\f1\'B7\tab}In Windows, our OS package is Windows 10, in Linux, it's the kernel along with other packages. The kernel controls the core components of our operating system. Like our word processors, the kernel is just another package. The kernel developers regularly include security patches, new features and fixes for bugs in their updates. If you want to to get all these things, you should be running a new kernel. To first view what kernel version you have, we're going to learn a new command called uname, the uname command gives us the system information. If you use the -r flag for kernel release you'll see what kernel version you have.\par
+{\pntext\f1\'B7\tab}uname => system information\par
+{\pntext\f1\'B7\tab}uname -r => kernal version\par
+{\pntext\f1\'B7\tab}full-upgrade => to update core os (Kernal) of the linux.\par
+{\pntext\f1\'B7\tab}sudo apt full-upgrade => update system.\par
+{\pntext\f1\'B7\tab}The Linux kernel is the main component of a Linux operating system (OS). The kernel is software located in the memory that tells the central processing unit (CPU) what to do. The Linux kernel is like a personal assistant for the hardware that relays messages and requests from users to the hardware. \par
+{\pntext\f1\'B7\tab}A Linux distribution is an operating system (OS) that includes the Linux kernel and usually a package management system.\par
+{\pntext\f1\'B7\tab}\b apt-get update \b0 To update with apt, open the terminal and use the command apt-get update. This command prompts you to enter your password, then it updates the list of system packages. \par
+{\pntext\f1\'B7\tab}\b apt-get upgrade\b0  Once the package list is up to date, use the command apt-get upgrade to actually download and install all updated versions for the packages in the list.\par
+
+\pard\sa200\sl276\slmult1\par
+\ul\b Filesystem :\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\ulnone\b0 NTFS, FAT 32, EXT \par
+{\pntext\f1\'B7\tab}Support both mbr and gpt\par
+{\pntext\f1\'B7\tab}Parted tool => Interactive, Command Line\par
+{\pntext\f1\'B7\tab}parted -l => list out disks and partitions\par
+{\pntext\f1\'B7\tab}First storage device denoted by /dev/sda => partition are sda1, sda2...\par
+{\pntext\f1\'B7\tab}sudo parted /dev/sdb => select second device to perform some function on it.\par
+{\pntext\f1\'B7\tab}mklabel gpt => to create partition table first\par
+{\pntext\f1\'B7\tab}print => to out put the detail => mklabel gpt | print\par
+{\pntext\f1\'B7\tab}mkpart => partiton command of parted tool\par
+{\pntext\f1\'B7\tab}mkpart primary ext4 1Mib 5Gib\par
+{\pntext\f1\'B7\tab}mkfs => format partition using mkfs\par
+{\pntext\f1\'B7\tab}sudo mkfs -t ext4 /dev/sdb1\par
+{\pntext\f1\'B7\tab}mklabel =>make  mbr or gpt, make partition using => mkpart, mkfs used to format partition them mount to use it.\par
+{\pntext\f1\'B7\tab}sudo mount /dev/sdb1 /directoryName/ =>directory name where you want to mount the disk.\par
+{\pntext\f1\'B7\tab}umont => sudo  umont /dev/sdb1\par
+{\pntext\f1\'B7\tab}etc/fstab => edit this file if you want your disks  mounnted after restart because above method mounted disk disappear as you shutdows\par
+{\pntext\f1\'B7\tab}UUID => universal unique ID of the device => sudo blkid\par
+{\pntext\f1\'B7\tab}  The fstab configuration file made this administrative task more efficient by offering the option to automate the mounting of partitions or file systems during the boot process.\par
+{\pntext\f1\'B7\tab}\b Linux: Swap:\b0\par
+{\pntext\f1\'B7\tab}The dedicated area of the hard drive used for virtual memory is known as swap space.\par
+{\pntext\f1\'B7\tab}Swap space in Linux is used when the amount of physical memory (RAM) is full. If the system needs more memory resources and the RAM is full, inactive pages in memory are moved to the swap space. While swap space can help machines with a small amount of RAM, it should not be considered a replacement for more RAM. Swap space is located on hard drives, which have a slower access time than physical memory. Swap space can be a dedicated swap partition (recommended), a swap file, or a combination of swap partitions and swap files.\par
+{\pntext\f1\'B7\tab}cat /proc/swaps commands to verify how much and where swap is in use.\par
+{\pntext\f1\'B7\tab}{{\field{\*\fldinst{HYPERLINK https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/html/storage_administration_guide/ch-swapspace }}{\fldrslt{https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/html/storage_administration_guide/ch-swapspace\ul0\cf0}}}}\f0\fs22\par
+{\pntext\f1\'B7\tab}\b Linux Files:\b0\par
+{\pntext\f1\'B7\tab}Metadata and files are organized into a structure called an Inode. Inodes are similar to the Windows NTFS MFT records. We store Inodes in Inodes table and they help us manage the files on our file system. The Inode itself doesn't actually store file data or the file name, but it does store everything else about a file. Shortcuts in Linux are referred to as soft links or sim links. They work in a similar way symbolic links work in Windows, in that they just point to another file.\par
+{\pntext\f1\'B7\tab}softlink => point towards a actual file => ln -s file_Name Soft_linkFileName_Creating\par
+{\pntext\f1\'B7\tab}hardlink => ln orignal_File Hard_filename.\par
+{\pntext\f1\'B7\tab}Hard links are great, if you need to have the same file stored in different places, but you don't want to take up any additional space on the volume. This is because all the hard links point to the same space on the volume. \par
+{\pntext\f1\'B7\tab}\b Disk Usage:\b0\par
+{\pntext\f1\'B7\tab}disk utilization on your computer and windows and Linux. We can do this using the du-h command in linux.\par
+{\pntext\f1\'B7\tab}du -h => disk usage command\par
+{\pntext\f1\'B7\tab}df -h => or df => disk free space information\par
+{\pntext\f1\'B7\tab}The du or disk usage command shows us the disk usage of a specific directory. If you don't specify a directory, it'll default to your current one. The dash h flag gives you the data measurements in human readable form. You should use the du Command if you want to know how much disk space is being used by files in a directory.\par
+{\pntext\f1\'B7\tab}No need defragmention in linux because it took care of it very efficiently.\par
+{\pntext\f1\'B7\tab}You can measure the fragmentation of a Linux file system with the fsck command -- look for "non-contiguous inodes" in the output.\par
+{\pntext\f1\'B7\tab}\b Linux: Filesystem Repair:\b0\par
+{\pntext\f1\'B7\tab}fsch => file check command \par
+{\pntext\f1\'B7\tab}sudo fsck path\par
+{\pntext\f1\'B7\tab}A computer file system is software that provides structure for storing the operating system (OS) and all other software installed on system hard drives. A hard drive must be formatted with a file system before the operating system can be installed. Since Linux is an open source OS, innovators have created nearly 100 file systems that support Linux OS installations. Several common file systems that are used for Linux systems include ext, ext2, ext3, ext4, JFS, XFS, ZFS, F2FS, and more. \par
+{\pntext\f1\'B7\tab}The most critical first step, after data corruption has been identified or suspected, is to shut down the affected hard drive(s). The reason for this step is to stop the cause of the corruption from writing to the hard drives. The longer the corruption activity continues, the more difficult recovering the data becomes. \par
+{\pntext\f1\'B7\tab}\b Important Warning: The fsck command should NOT be used:\par
+{\pntext\f1\'B7\tab}\b0 on a hard drive that was a member of a RAID array.\par
+{\pntext\f1\'B7\tab}on a mounted file system (must be unmounted). \par
+{\pntext\f1\'B7\tab}fsck -n  -p -y -f FileSystem1name - FileSystem2name ... \par
+{\pntext\f1\'B7\tab}To see more advanced flags and help use the man fsck command.\par
+{\pntext\f1\'B7\tab}As a root or sudo user, use vi (visual instrument) to add the fsck command to the boot sequence.\par
+
+\pard\sa200\sl276\slmult1\par
+\ul\b Process Management:\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\ulnone\b0 programs are the applications that we can run, like the Chrome web browser. Processes are programs that are running. We can have lots of processes running for the same program. Like how we can have many Chrome windows open at once, or lots of movies playing using one program. When we launch a process, we're executing a program and remember, a program is just software.\par
+{\pntext\f1\'B7\tab}When you open up an application like a word processor, you're launching a process. That process is given something called a process ID to uniquely identify it from other processes. Our computer sees that the process needs hardware resources to run, so our kernel makes decisions to figure out what resources to give it. Then in the blink of an eye, our computer starts up a word processor and we're ready to start working. This happens for every process you launch yourself and for every process you don't even know is running. \par
+{\pntext\f1\'B7\tab}\b Background processes: =>\b0 There are also not so visible processes running. These are known as background processes, sometimes referred to as \b daemon \b0 processes. \b Background processes\b0  are processes that run in the background. We don't really see them and we don't interact with them, but our system needs them to function. They include processes like scheduling resources, logging, managing networks, and more.\par
+{\pntext\f1\'B7\tab}\b Windows: Process Creation and Termination: \b0 The way that processes are created and stopped differs based on the operating system you use. First, let's have a look at how Windows does things. When Windows boots up or starts, the first non kernel and user mode that starts as the Session Manager Subsystem or smss.exe. The smss.exe process is in charge of setting some stuff up for the OS to work. It then kicks off the login process called windlogon.exe appropriately enough. Along with the client server runtime subsystem called csrss.exe, which handles running the Windows GUI and command-line console. \par
+{\pntext\f1\'B7\tab}\b Environment:\b0  In Windows, each new process that's created needs a parent to tell the operating system that a new process needs to be made. The child process inherits some things from its parent, like variables and settings, which we can collectively refer to as an environment.\par
+{\pntext\f1\'B7\tab}In Windows Mostly  child process not depend on the parent process after starting parent process if terminated, child process keep running.\par
+{\pntext\f1\'B7\tab}taskkill => utility to terminate the process\par
+{\pntext\f1\'B7\tab}PID => process ID\par
+{\pntext\f1\'B7\tab}taskkill /pid 5856 => kill command to terminate notepad process.\par
+{\pntext\f1\'B7\tab}Ends one or more tasks or processes. Processes can be ended by process ID or image name. You can use the tasklist command command to determine the process ID (PID) for the process to be ended.\par
+{\pntext\f1\'B7\tab}Examples: taskkill [/s <computer> [/u [<domain>\\]<username> [/p [<password>]]]] \{[/fi <filter>] [...] [/pid <processID> | /im <imagename>]\} [/f] [/t]\par
+{\pntext\f1\'B7\tab}taskkill /pid 1230 /pid 1241 /pid 1253\par
+{\pntext\f1\'B7\tab}taskkill /f /fi "USERNAME eq NT AUTHORITY\\SYSTEM" /im notepad.exe\par
+{\pntext\f1\'B7\tab}taskkill /s srvmain /u maindom\\hiropln /p p@ssW23 /fi "IMAGENAME eq note*" /im *\par
+{\pntext\f1\'B7\tab}taskkill /pid 2134 /t /fi "username eq administrator"\par
+{\pntext\f1\'B7\tab}taskkill /f /fi "PID ge 1000" /im * => greater than PID 1000 eliminated.\par
+{\pntext\f1\'B7\tab}\par
+}
+ 

@@ -1,0 +1,251 @@
+{\rtf1\ansi\ansicpg1252\deff0\nouicompat{\fonttbl{\f0\fnil\fcharset0 Calibri;}{\f1\fnil Calibri;}{\f2\fnil\fcharset2 Symbol;}}
+{\*\generator Riched20 10.0.19041}\viewkind4\uc1 
+\pard\li720\sa200\sl276\slmult1\qc\b\f0\fs22\lang9 Windows Commands: \par
+
+\pard\sa200\sl276\slmult1\ul Directories:\ulnone\b0\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1 ls with parameter of directory =>ls C:\\  , list all directories\par
+{\pntext\f2\'B7\tab}hidden directory , root and child directories  =>  ls -Force C:/\par
+{\pntext\f2\'B7\tab}Get-help ls , Get-help ls -full \par
+
+\pard\sa200\sl276\slmult1\par
+\ul\b Directories Navigation:\ulnone\b0\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1 Absolute and Relative Path\par
+{\pntext\f2\'B7\tab}pwd => print working directory\par
+{\pntext\f2\'B7\tab}cd => change directory\par
+{\pntext\f2\'B7\tab}cd C:\\Users\\shah\\Documents => Absolute path, root to further\par
+{\pntext\f2\'B7\tab}Relative path example : cd .. \\Desktop\par
+{\pntext\f2\'B7\tab}cd .. => go above one level\par
+{\pntext\f2\'B7\tab}cd ~\\Desktop => ~is the path of home directory short-cut\par
+{\pntext\f2\'B7\tab}tab completion , auto  like .\\Des.. tab and volla\par
+
+\pard\sa200\sl276\slmult1\par
+\ul\b CRUD operations Directories:\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\ulnone\b0 mkdir files_name  => to make directory\par
+{\pntext\f2\'B7\tab}mkdir "my cool folder" => another way to make directory with spaces\par
+{\pntext\f2\'B7\tab}mkdir my` cool `folder => another way to make directory with spaces, `` this signs called back ticks\par
+{\pntext\f2\'B7\tab}use arrows to move between old commands \par
+{\pntext\f2\'B7\tab}OR use ctrl + R to find commands in history\par
+{\pntext\f2\'B7\tab}clear => clear the screen\par
+{\pntext\f2\'B7\tab}  copy/paste commands, Ctrl + C & CTRL + V \par
+{\pntext\f2\'B7\tab}cp => for copy, For example: cp filesName  Destination address\par
+{\pntext\f2\'B7\tab}WildCards to select all: *  aystrick\par
+{\pntext\f2\'B7\tab}like : cp *.filetype destination path\par
+{\pntext\f2\'B7\tab}-recurse : list all the content of directory, necceary when moving a directory, otherwise cp command only copy empty directory, for eample: \par
+{\pntext\f2\'B7\tab}-Verbos : to get output of copy process, for eaxmple: \par
+{\pntext\f2\'B7\tab}cp 'Bird Pictures' C:\\Users\\Shah\\Desktop -Recurse -Verbose\par
+{\pntext\f2\'B7\tab}Moving and renaming files using mv command\par
+{\pntext\f2\'B7\tab}mv .\\blue_document.txt  yellow_document.txt\par
+{\pntext\f2\'B7\tab}mv .\\blue_document.txt  C:\\Users\\Shah\\Desktop\par
+{\pntext\f2\'B7\tab}mv  *_document.txt  C:\\Users\\Shah\\Desktop\par
+{\pntext\f2\'B7\tab}Removing files using => rm or remove\par
+{\pntext\f2\'B7\tab}rm ~\\text.txt \par
+{\pntext\f2\'B7\tab}rm ~\\text.txt -force\par
+{\pntext\f2\'B7\tab}rm ~\\textdirectory -Recurse\par
+
+\pard\sa200\sl276\slmult1\par
+\ul\b File and Text Manipulation:\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\ulnone\b0 cat or more command to display text on terminal\par
+{\pntext\f2\'B7\tab}but more command shows it page by page\par
+{\pntext\f2\'B7\tab}Enter key let you scroll line by line and space page\par
+{\pntext\f2\'B7\tab}q key to quit out of more command\par
+{\pntext\f2\'B7\tab}cat fruits.txt -Head 10 => show first 10 lines\par
+{\pntext\f2\'B7\tab}cat fruits.txt -Tail 10 => show last 10 lines\par
+{\pntext\f2\'B7\tab}notepad , Notepad++\par
+{\pntext\f2\'B7\tab}start notepad++  file_name\par
+
+\pard\sa200\sl276\slmult1\par
+\ul\b Windows Power Shell :\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\ulnone\b0 Get-help\par
+{\pntext\f2\'B7\tab}ls\par
+{\pntext\f2\'B7\tab}Get-Alias => Get Alias ls\par
+{\pntext\f2\'B7\tab}Get-ChildItem C:\\path\par
+{\pntext\f2\'B7\tab}cmd.exe ms dos windows commands \par
+{\pntext\f2\'B7\tab}ls => dir\par
+{\pntext\f2\'B7\tab}/? => get-help, like dir /?\par
+{\pntext\f2\'B7\tab}Searching => Ctrl + F\par
+{\pntext\f2\'B7\tab}search in multiple files => by using search and enable indexing option to index file content as well OR\par
+{\pntext\f2\'B7\tab}search using PS command line => sls => select-string\par
+{\pntext\f2\'B7\tab}Select-String wordtoSearch filename OR  *.txt for wild card uses.\par
+{\pntext\f2\'B7\tab}-filter\par
+{\pntext\f2\'B7\tab}ls 'C:\\program Files\\' -Recurse -Filter *.exe\par
+
+\pard\sa200\sl276\slmult1\par
+\ul\b Input, Output and pipeline:\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\ulnone\b0 echo woof  > dog.txt\par
+{\pntext\f2\'B7\tab}cat .\\dog.txt\par
+{\pntext\f2\'B7\tab}echo => Write-Output\par
+{\pntext\f2\'B7\tab}> redirected operator\par
+{\pntext\f2\'B7\tab}>> used to Append information in already existed file\par
+{\pntext\f2\'B7\tab}cat words.txt | Select-String st\par
+{\pntext\f2\'B7\tab}cat words.txt | Select-String st > st_words.txt => output and save output in new file\par
+{\pntext\f2\'B7\tab}rm secure_file 2> errors.txt OR rm secure_file 2> $null\par
+{\pntext\f2\'B7\tab}Get-Help about-redirection\par
+
+\pard\sa200\sl276\slmult1\par
+\ul\b Users and Groups:\ulnone\b0\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1 Computer Management Console in Windows.\par
+{\pntext\f2\'B7\tab}Local users and groups\par
+{\pntext\f2\'B7\tab}List of the user => Get-LocalUser\par
+{\pntext\f2\'B7\tab}List of the local Groups => Get-LocalGroup\par
+{\pntext\f2\'B7\tab}list of specific user or group members , view group menbers => Get-LocalGroupMemeber groupName => Get-LocalGroupMemeber Administrators\par
+{\pntext\f2\'B7\tab}User Account Control (UAC) is a Windows security feature designed to protect the operating system from unauthorized changes. \par
+{\pntext\f2\'B7\tab}Computer Management Console => Local user => user profile to set password\par
+{\pntext\f2\'B7\tab}/? get help command\par
+{\pntext\f2\'B7\tab}change password command => net user cindy 'some_password'.\par
+{\pntext\f2\'B7\tab}net user cindy * => type password in next line hidden\par
+{\pntext\f2\'B7\tab}/logonpasswordchg : yes => change pass on next log on like=> net user victor /logonpasswordchg: yes\par
+{\pntext\f2\'B7\tab}ADD User => Computer Management Console => Users => New User\par
+{\pntext\f2\'B7\tab}Delete user same way as well.\par
+{\pntext\f2\'B7\tab}ADD USER => net user userName * /add => star here represent the password \par
+{\pntext\f2\'B7\tab}net user andrea password1  /add /logonpasswordchg: yes\par
+{\pntext\f2\'B7\tab}Get-LocalUser => verfiy the creation of the user profiles.\par
+{\pntext\f2\'B7\tab}net user andrea /del => delete the user\par
+{\pntext\f2\'B7\tab}Remove-LocalUser cesar => another way to remove users => Get-LocalUser to verify.\par
+
+\pard\sa200\sl276\slmult1\ul\b\par
+Permissons:\ulnone\b0\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1 Permissions => assigned using 'Access Control List' and 'Discretionary Access control List or DACL'.\par
+{\pntext\f2\'B7\tab}System Access Control List as well (SACL).\par
+{\pntext\f2\'B7\tab}Read, Execute, Write, Full Control , Modify permissions are available in the security tab in the properties.\par
+{\pntext\f2\'B7\tab}icacls /? => use to let you know what permission you have.\par
+{\pntext\f2\'B7\tab}\b Windows: Modifying Permissions:\b0\par
+{\pntext\f2\'B7\tab}Properties => security => Edit Permissions\par
+{\pntext\f2\'B7\tab}icacls 'C:\\Vacation Pictures\\' /grant 'Everyone:(OI)(CI)(R)'\par
+{\pntext\f2\'B7\tab}see the permission of a file => icacls 'C:\\file Name'\par
+{\pntext\f2\'B7\tab}give permission to read everyone => icacls 'C:\\Vacation Pictures\\' /grant 'Everyone:(OI)(CI)(R)'\par
+{\pntext\f2\'B7\tab}grant permission to authenticated users only=> icacls 'C:\\Vacation Pictures\\' /grant 'Authenticated Users:(OI)(CI)(R)'\par
+{\pntext\f2\'B7\tab}remove permissions for specific group => icacls 'C:\\Vacation Pictures\\' /remove Group-Name.\par
+{\pntext\f2\'B7\tab}Verify Changes => icacls 'C:\\Vacation Pictures'\par
+{\pntext\f2\'B7\tab} \b Windows: Special Permissions\b0\par
+{\pntext\f2\'B7\tab}Advance permissions option in the  security tab, read, write permissions has specific permission associated with them.\par
+{\pntext\f2\'B7\tab}WD : create files/write Data\par
+{\pntext\f2\'B7\tab}AD : Create Folders/ Append Data\par
+{\pntext\f2\'B7\tab}S: Synchronize\par
+
+\pard\sa200\sl276\slmult1\par
+\ul\b Software Packaging:\ulnone\b0\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1 owner of the software package software and we easily intall it, like .exe files, using package making software called software compiler.\par
+{\pntext\f2\'B7\tab}.exe, msi file, custom installer. Windows store => app repository, => appx packages.\par
+{\pntext\f2\'B7\tab}command line installation => file path and file with .exe and boom enter.\par
+{\pntext\f2\'B7\tab}C:\\Users\\cindy\\Desktop\\App.exe => enter and installation begins.\par
+{\pntext\f2\'B7\tab}flag to install it silently, reboot and others.\par
+{\pntext\f2\'B7\tab}C:\\Users\\cindy\\Desktop\\App.exe /? => shows what command are avaiable through installer.\par
+{\pntext\f2\'B7\tab}The app packager used in the Windows Software Development Kit (SDK) and Microsoft Visual Studio includes a program called MakeAppx.exe. \par
+{\pntext\f2\'B7\tab}Installation packages contain all the information the Windows Installer needs to install software on a computer.\par
+{\pntext\f2\'B7\tab}\b Commands to install and flags:\b0\par
+{\pntext\f2\'B7\tab}/extract:[path]: Extracts the content of the package to the path folder. If a path isn\rquote t specified, then a Browse dialog box appears.\par
+{\pntext\f2\'B7\tab}/log:[path to log file]: Enables verbose logging (more detailed information recorded in the log file) for the update installation.\par
+{\pntext\f2\'B7\tab}/lang:lcid: Sets the user interface to the specified locale when multiple locales are available in the package.\par
+{\pntext\f2\'B7\tab}/quiet: Runs the package in silent mode.\par
+{\pntext\f2\'B7\tab}/passive: Runs the update without any interaction from the user.\par
+{\pntext\f2\'B7\tab}/norestart: Prevents prompting of the user when a restart of the computer is needed.\par
+{\pntext\f2\'B7\tab}/forcerestart: Forces a restart of the computer as soon as the update is finished.\par
+{\pntext\f2\'B7\tab}You can always type /?, /h, or /help from the command line to view these options.\b\par
+{\pntext\f2\'B7\tab}Archinves:\b0\par
+{\pntext\f2\'B7\tab}comprised of files that compressed in a signle file\par
+{\pntext\f2\'B7\tab}pakage archives : core or source software compressed into a single file.\par
+{\pntext\f2\'B7\tab}.tar .zip .rar file types.\par
+{\pntext\f2\'B7\tab}7.zip => open source archive tool.\par
+{\pntext\f2\'B7\tab}command to interact with archive in the PS => compress-Archive -Path Folder_Path  ~\\Desktop\\coolArchive.zip => make zip file in power shell command line.\par
+{\pntext\f2\'B7\tab}\b Windows: Package Dependencies:\par
+{\pntext\f2\'B7\tab}library : DLL => dynamic link library.\par
+{\pntext\f2\'B7\tab}\b0 Depend on other piece of the  code to work correctly.\b\par
+{\pntext\f2\'B7\tab}\b0 side by side assembies => SXS \b\par
+{\pntext\f2\'B7\tab}\b0 find-package package_Name => shows the  package alongsside package dependencies.\b\par
+{\pntext\f2\'B7\tab}\b0 verb-noun => win commands pattern.\b\par
+{\pntext\f2\'B7\tab}\b0 Chocolatey => all windows software lives there.\b\par
+{\pntext\f2\'B7\tab}\b0 The DLL versions can be found in the "C:\\Windows\\assembly"\b\par
+{\pntext\f2\'B7\tab}\b0 Side-by-side assemblies contain XML files called manifests. The manifests contain data similar to the configuration settings and other data that applications traditionally stored in the Windows registry. Instead of registering this data in the Windows registry, the applications store shared side-by-side assembly manifests in the WinSxS folder of the computer. Private manifests are stored inside the application\rquote s folder or they can be embedded in an application or assembly. The metadata of a manifest may include: name, Resorce Collections, classes and dependencies.\b\par
+{\pntext\f2\'B7\tab}Package Manager:\par
+{\pntext\f2\'B7\tab}\b0 manage package using tools like pake manger  tools, like ninite, choclyte => cmd installation.\b\par
+{\pntext\f2\'B7\tab}\b0 Another example is NuGet, is a package manager, primarily used for packaging and distributing software written using the .NET framework.\b\par
+{\pntext\f2\'B7\tab}\b0 Install choclyte and repository, sysinternals where its located.\b\par
+{\pntext\f2\'B7\tab}\b0 find-package folder_name -includDependencies => command to find instaalled pakages specifically.\b\par
+{\pntext\f2\'B7\tab}\b0 install-package -Name sysinternals => to install packages\b\par
+{\pntext\f2\'B7\tab}\b0 Get-Package -name packagename => details of installed pacakage/software\b\par
+{\pntext\f2\'B7\tab}\b0 uninstall-package -Name packageName => to uninstall a package.\b\par
+{\pntext\f2\'B7\tab}\b0 Register-Source to add new link to repository.\b\par
+{\pntext\f2\'B7\tab}\b0 install-package -Name PackageName -source sourceName => command to install software from a official source or repository.\par
+{\pntext\f2\'B7\tab}\b Installation Background:\b0\par
+{\pntext\f2\'B7\tab}When you install software on your computer, the installer program performs the following tasks in the background: \par
+{\pntext\f2\'B7\tab}Checks system requirements\par
+{\pntext\f2\'B7\tab}Checks for existing software versions\par
+{\pntext\f2\'B7\tab}Creates or updates program files and folders\par
+{\pntext\f2\'B7\tab}Adds configuration data\par
+{\pntext\f2\'B7\tab}Writes new files to the system\par
+{\pntext\f2\'B7\tab}Creates new registry entries\par
+{\pntext\f2\'B7\tab}Downloads new files from the Internet\par
+{\pntext\f2\'B7\tab}The installer may also prepare the target disk by wiping all or part of it. Then, it copies over all the files required for your operating system to function.\par
+{\pntext\f2\'B7\tab}\b Windows: Devices and Drivers:\par
+{\pntext\f2\'B7\tab}Driver: \b0  is used to help our hardware devices interact with our operating system.\b\par
+{\pntext\f2\'B7\tab}\b0 Device Manager => tool/console to handle to all devices drivers.\b\par
+{\pntext\f2\'B7\tab}\b0 when Windows notices that a new device has been connected, the first thing it will do is ask the device that's been plugged in for it's Hardware ID.\b\par
+{\pntext\f2\'B7\tab}\b0 Once Windows has the Hardware ID of the new device, the OS uses that ID to search for the right driver for the device,  It looks in a few places for the driver, starting with a local list of well-known drivers, then going onto Windows Update or the Driver Store.\b\par
+{\pntext\f2\'B7\tab}Windows: Operating System Updates:\par
+{\pntext\f2\'B7\tab}\b0 When your operating system manufacturer discovers a security hole, the OS, they do their best to create a patch for this hole.\par
+{\pntext\f2\'B7\tab}A security patch is software that's meant to fix up a security hole. When you have an operating system update with security patches it's vital that you install those patches right away. The longer you wait, the more prone you are to being affected by a security hole.\b\par
+{\pntext\f2\'B7\tab}\b0 The Windows update client service runs in the background on your computer to download and install updates and patches for your operating system.\b\par
+{\pntext\f2\'B7\tab}\b0 updates are cumulative. This means that every month a package of updates and patches is released that supersedes the previous month's updates. The idea behind this is that computers will need to download less stuff in order to be up to date.\b\par
+{\pntext\f2\'B7\tab}\b0 If you miss a lot of updates, you need to only install the latest accumalaive package.\b\par
+{\pntext\f2\'B7\tab}\b0 The Windows OS includes the Windows Update Client service. This service runs in the background on your computer to help you download and install updates and patches for the operating system.\b\par
+
+\pard\fi-360\li720\sa200\sl276\slmult1\par
+\ul Filesystem :\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\ulnone\b0 NTFS, FAT 32, EXT \b\par
+{\pntext\f2\'B7\tab}\b0 Use graphical console => Disk Management to handle partition\b\par
+{\pntext\f2\'B7\tab}\b0 Format and make file systems and create volumes.\b\par
+{\pntext\f2\'B7\tab}\b0 4 primary partition allowed beyond we use  logical partitiopn. =>MBR\b\par
+{\pntext\f2\'B7\tab}\b0 converted memory into blocks.\b\par
+{\pntext\f2\'B7\tab}\b0 Use Diskpart tool manage using CLI.\b\par
+{\pntext\f2\'B7\tab}\b0 MBR and GPT used => MBR old technology, GPT => GUID Partition Table support many primary partitions and larger hard disk support.\b\par
+{\pntext\f2\'B7\tab}SWAP Space:\par
+{\pntext\f2\'B7\tab}\b0 This makes life easier for the program which needs to access memory, since it doesn't have to worry about what portions of memory other programs might be using. It also doesn't have to keep track of where the data it's using is located in RAM. Virtual memory also gives us the ability for our computer to use more memory than we physically have installed. To do this, it dedicates an area of the hard drive to use a storage space for blocks of data called pages. When a particular page of data isn't being used by an application, it gets evicted, which means it gets copied out of memory onto the hard drive. This is because accessing data on RAM is fast, much faster than the hard drive where space is at a premium. Because of this, the operating system wants to keep the most commonly access data pages in RAM. It then puts stuff that hasn't been used in awhile on the disk. \b\par
+{\pntext\f2\'B7\tab}\b0 Memory manager handle paging\b\par
+{\pntext\f2\'B7\tab}\b0 Control Panl => system => system properties => Advance system setting => Advance tab and change\b\par
+{\pntext\f2\'B7\tab}\b0 Page files can serve to store modified pages that are not currently in use. This keeps the information easily accessible in case it is needed again by the system, without overburdening RAM storage. \b\par
+{\pntext\f2\'B7\tab}Windows Files:\par
+{\pntext\f2\'B7\tab}\b0 The file metadata includes everything else like the owner of the file, permissions, size of the file, its location on the hard drive, and so on. Remember that the NTFS file system is the native file system format of windows. \b\par
+{\pntext\f2\'B7\tab}\b0 MFT => Master File Table =>  get enteries of the file meta data.\b\par
+{\pntext\f2\'B7\tab}\b0 The NTFS file system contains a file called the master file table, or MFT. There is at least one entry in the MFT for every file on an NTFS file system volume, including the MFT itself. All information about a file, including its size, time and date stamps, permissions, and data content, is stored either in MFT entries, or in space outside the MFT that is described by MFT entries.\par
+{\pntext\f2\'B7\tab}As files are added to an NTFS file system volume, more entries are added to the MFT and the MFT increases in size. When files are deleted from an NTFS file system volume, their MFT entries are marked as free and may be reused. However, disk space that has been allocated for these entries is not reallocated, and the size of the MFT does not decrease.\par
+{\pntext\f2\'B7\tab}The NTFS file system reserves space for the MFT to keep the MFT as contiguous as possible as it grows. The space reserved by the NTFS file system for the MFT in each volume is called the MFT zone. Space for file and directories are also allocated from this space, but only after all of the volume space outside of the MFT zone has been allocated.\b\par
+{\pntext\f2\'B7\tab}\b0 symbolic links and hard \b\par
+{\pntext\f2\'B7\tab}\b0 mklink /H file_you_Symbolic_Link Original_file => point towards orignal file.\b\par
+{\pntext\f2\'B7\tab}\b0 symbolic link => Symbolic links are kind of like shortcuts, but at the file system level. When you create a symbolic link, you create an entry in the MFT that points to the name of another entry or another file.\b\par
+{\pntext\f2\'B7\tab}\b0 Hard link => mklink /H file_you_Hard_Link Original_file\b\par
+{\pntext\f2\'B7\tab}\b0 Orignial File name change but hard link worked.\b\par
+{\pntext\f2\'B7\tab}\b0 The function CreateSymbolicLink allows you to create symbolic links using either an absolute or relative path.\par
+{\pntext\f2\'B7\tab}Symbolic links can either be absolute or relative links. Absolute links are links that specify each portion of the path name; relative links are determined relative to where relative\f1\endash link specifiers are in a specified path.\f0\par
+{\pntext\f2\'B7\tab}\f1 A hard link is the file-system representation of a file by which more than one path references a single file in the same volume. To create a hard link, use the CreateHardLinkA function.\par
+{\pntext\f2\'B7\tab}Any changes made to a hard-linked file are instantly visible to applications that access it through the links that reference it. The attributes on the file are reflected in every hard link to that file, and changes to that file's attributes propagate to all the hard links.\f0\par
+{\pntext\f2\'B7\tab}\b Disk Usage:\b0\par
+{\pntext\f2\'B7\tab}Computer Management utility => Disk Management option there or direct access it\par
+{\pntext\f2\'B7\tab}Windows provides a command line utility called disk usage as part of its sys internals tool offering that DU utility can print out the usage of a given disk and tell you how many files it has. It can be useful for creating scripts which might need text-based output instead of visual reports, like the pie chart and disk management. \par
+{\pntext\f2\'B7\tab}cleanmgr.exe => disk => properties => disk cleanup option use this function or tool.\par
+{\pntext\f2\'B7\tab}The idea behind disk defragmentation is to take all the files stored on a given disk and reorganize them into neighboring locations. Having files ordered like this will make life easier for rotating hard drive disks that use an actuator arm to write to and read from a spinning disk. The head of the actuator arm will actually travel less to read the data it needs. I should call out that this is less of a benefit for solid-state drives since there's no physical read-write head that needs to move around a spinning disk. For these kinds of drives, the operating system can use a process called trim to reclaim unused portions of the solid-state disk.\par
+{\pntext\f2\'B7\tab}Disk Defragmention tool utility\par
+{\pntext\f2\'B7\tab}Du (disk usage) reports the disk space usage for the directory you specify. By default it recurses directories to show the total size of a directory and its subdirectories.\par
+{\pntext\f2\'B7\tab}c:\\windows\\SYSTEM32\\cleanmgr.exe /dDrive Note In this command, the placeholder Drive represents the drive letter of the hard disk to be cleaned.\par
+{\pntext\f2\'B7\tab}\b Windows: Filesystem Repair\par
+{\pntext\f2\'B7\tab}\b0 administrative command prompt and use the fsutil tool like this \b\par
+{\pntext\f2\'B7\tab}\b0 => fsutil repair query C: => c is drive name.\b\par
+{\pntext\f2\'B7\tab}\b0 Auto healing or recovery process running in the background. check by fsutil tool.\b\par
+{\pntext\f2\'B7\tab}\b0 chkdsk /F D: => comand to check disk. /F flag used to fix the problem when chkdsk utility found it.\b\par
+{\pntext\f2\'B7\tab}\b0 A lot of times you won't need to run check disk manually though. If the operating system detects that some data has been corrupted or that the disk has a bad sector, it'll set a bit in a metadata file on the volume that indicates there's corruption. When the system boots, the check disk utility will check this bit. If it's set, it will execute and try to repair the corruption by reconstructing the broken bits of the file system from the NTFS Log. As you can see the Windows NTFS file system has some pretty robust measures and features in place to recover and prevent corruption from breaking your partitions. \par
+
+\pard\sa200\sl276\slmult1\par
+\ul\b Process Management:\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\ulnone\b0\par
+}
+ 
