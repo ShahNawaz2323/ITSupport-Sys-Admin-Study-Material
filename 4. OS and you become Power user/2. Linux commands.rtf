@@ -284,6 +284,22 @@ CRUD Operations on Directories:\par
 {\pntext\f1\'B7\tab}man ps => to view the help page of the ps command\par
 {\pntext\f1\'B7\tab}{{\field{\*\fldinst{HYPERLINK https://man7.org/linux/man-pages/man1/ps.1.html }}{\fldrslt{https://man7.org/linux/man-pages/man1/ps.1.html\ul0\cf0}}}}\f0\fs22\par
 {\pntext\f1\'B7\tab}\b Linux: Signals:\b0\par
+{\pntext\f1\'B7\tab}In Linux, there are lots of signals that we can send processes. These signals are labeled with names starting with sig. Remember the sigint signal we talked about before. You can use sig.int to interrupt a process and the default action of the signal is to terminate the process that's interrupting. This is true for Linux too. You can send a sigint signal through the keyboard combination control C. Let's see this in action. I'm going to do the same thing as we did in Windows and start a program like sudo parted.\par
+{\pntext\f1\'B7\tab}We can see that we're in the parted tool now. Let's interrupt this tool and say we want it to abort the process with a control C keyboard combination.\par
+{\pntext\f1\'B7\tab}Now we can see that the process closed and we're back in our shell. We were able to interrupt our process midway and terminate it. Success.\par
+{\pntext\f1\'B7\tab}\b Linux: Managing Processes:\b0\par
+{\pntext\f1\'B7\tab}kill => used to kill the process. => kill PID\par
+{\pntext\f1\'B7\tab}The kill command without any flags sends a termination signal or SIGTERM. This will kill the process but it'll give it some time to clean up the resources it was using. If you don't give the process a chance to clean up some of the files it was working with, it could cause file corruption.\par
+{\pntext\f1\'B7\tab}kill -kill => sigkill, instantly kill a  process without giving the time to clean up.\par
+{\pntext\f1\'B7\tab}SIGSTP signal for terminal stop => suspendid status =>  ctrl + z => To send this, you can use the kill command with the flag -TSTP. I'm going to run ps -x so you can see the status of the processes. We're just going to put this process in a suspended state, so kill -TSTP 10754.\par
+{\pntext\f1\'B7\tab} SIGCONT for continued signal => kill -cont PID\par
+{\pntext\f1\'B7\tab}\b Linux: Resource Monitoring:\b0\par
+{\pntext\f1\'B7\tab}top => to view the resources are used in linux OR Htop and q key to quit.\par
+{\pntext\f1\'B7\tab}uptime => This command shows information about the current time, how long your system's been running, how many users are logged on, and what the load average of your machine is.\par
+{\pntext\f1\'B7\tab}Using the LSOF command, you don't have to wonder. It lists open files and what processes are using them.\par
+{\pntext\f1\'B7\tab}This command is great for tracking down those pesky processes that are holding open files. One last thing to call out about hardware utilization is that, you can monitor separately from processes. If you just wanted to see how your CPU or memory was doing, you could use various commands to check their output. This isn't immediately useful to see on a single machine, but maybe in the future if you manage a fleet of machines, you might want to think about monitoring the hardware utilization for all of your machines at once. \par
+{\pntext\f1\'B7\tab}In Linux, a load is the set of processes that a central processing unit (CPU) is currently running or waiting to run. A load for a system that is idle with no processes running or waiting to run is classified as a 0. Every process running or waiting to run adds a value of 1 to the load. This means if you have 3 applications running and 2 on the waitlist, the load is 5. The higher the load, the more resources are being used, and the more the load should be monitored to keep the system running smoothly. \par
+{\pntext\f1\'B7\tab}Another way you can monitor the load average in Linux is to use the top (table of processes) command in the terminal. The result of running the top command is an in-depth view of the resources being used on your system. \par
 {\pntext\f1\'B7\tab}\par
 }
  

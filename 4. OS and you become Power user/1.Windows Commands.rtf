@@ -273,6 +273,18 @@ Permissons:\ulnone\b0\par
 {\pntext\f2\'B7\tab}\b0 $A = Get-Process\par
 {\pntext\f2\'B7\tab}$A | Get-Process | Format-Table -View priority\b\par
 {\pntext\f2\'B7\tab}Windows: Signals:\par
+{\pntext\f2\'B7\tab}\b0 To tell a process to quit at the system level, we use something called a signal. A signal is a way to tell a process that something's just happened. You can generate a signal with special characters on your keyboard, and through other processes and software. One of the most common signals you'll come across is called SIGINT, which stands for signal interrupt. You can send a signal to a running process with Control C key combination.\par
+{\pntext\f2\'B7\tab}SIGINT => Singnal Interrupt => send using CTRL + C\par
+{\pntext\f2\'B7\tab}There are a few other windows signals that processes can send and receive. But unlike in Linux, there isn't an easy way for an end-user to issue arbitrary signal commands.\par
+{\pntext\f2\'B7\tab}\b Windows: Managing Processes:\par
+{\pntext\f2\'B7\tab}\b0 Process Explorer => Process Explorer is a utility Microsoft created to let IT support specialist, systems administrators and other users look at running processes. Although it doesn't come built into the Windows operating system, you can download it from the Microsoft website.\b\par
+{\pntext\f2\'B7\tab}\b0 Process Explorer is the part of the sysinternals tools => procexp.exe\b\par
+{\pntext\f2\'B7\tab}Windows: Resource Monitoring:\par
+{\pntext\f2\'B7\tab}\b0 Resource Monitor utility or the process explorer utility used to watch process and resources.\b\par
+{\pntext\f2\'B7\tab}GET-Processs => \b0 To view process\b\par
+{\pntext\f2\'B7\tab}get-process | Sort CPU -descending | Select -first 3 -Property ID,ProcessName,CPU\b0   =>  First, we call the Get-Process command line to obtain all that process information from the operating system. Then we use a pipe to connect the output of that command to the sort command. You might remember pipes from some Linux examples earlier. We sort the output of Get-Process by the CPU column, descending to put the biggest numbers first. Then we pipe that information to the select command. Using select, we picked the first three rows from the output of sort and pick only the property ID, name and CPU and out to display.\b\par
+{\pntext\f2\'B7\tab}Get -Process => \b0 Aliases of the get process => gps and ps like linux ps command\b\par
+{\pntext\f2\'B7\tab}\b0 You can also use the built-in alternate views of the processes available with \b Format-Table,\b0  such as StartTime and Priority, and you can design your own views.\b\par
 {\pntext\f2\'B7\tab}\par
 }
  
