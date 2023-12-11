@@ -300,6 +300,28 @@ CRUD Operations on Directories:\par
 {\pntext\f1\'B7\tab}This command is great for tracking down those pesky processes that are holding open files. One last thing to call out about hardware utilization is that, you can monitor separately from processes. If you just wanted to see how your CPU or memory was doing, you could use various commands to check their output. This isn't immediately useful to see on a single machine, but maybe in the future if you manage a fleet of machines, you might want to think about monitoring the hardware utilization for all of your machines at once. \par
 {\pntext\f1\'B7\tab}In Linux, a load is the set of processes that a central processing unit (CPU) is currently running or waiting to run. A load for a system that is idle with no processes running or waiting to run is classified as a 0. Every process running or waiting to run adds a value of 1 to the load. This means if you have 3 applications running and 2 on the waitlist, the load is 5. The higher the load, the more resources are being used, and the more the load should be monitored to keep the system running smoothly. \par
 {\pntext\f1\'B7\tab}Another way you can monitor the load average in Linux is to use the top (table of processes) command in the terminal. The result of running the top command is an in-depth view of the resources being used on your system. \par
+
+\pard\sa200\sl276\slmult1\par
+\ul\b Operating Systems in Practice:\ulnone\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1 Remote Connections on Linux: \b0 SCP or secure copy is a command you can use in Linux to copy files between computers on a network. It utilizes SSH to transfer the data.\b\par
+{\pntext\f1\'B7\tab}\b0 scp file_Path user@address: => address is there destination machine address.\b\par
+
+\pard\sa200\sl276\slmult1\b0  \b Logging : System Monitoring \ul\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\ulnone\b0 A log is like your computer's diary. It records events that happen on your system. \b\par
+{\pntext\f1\'B7\tab}\b0 ls  /var/log\b\par
+{\pntext\f1\'B7\tab}\b0 Logs in Linux are stored in the /var/log directory. Remember that the slash var directory stands for variable, meaning files that constantly change are kept in this directory. It turns out that logs are constantly changing.\b\par
+{\pntext\f1\'B7\tab}\b0 /var/log/auth.log. Authorization and security-related events are logged here. /var/log/kern.log. Kernel messages are logged here. /var/log/dmesg, system startup messages are logged here. If you encounter an issue at, let's say boot up, this is a good place to check for information. \b\par
+{\pntext\f1\'B7\tab}\b0 Luckily, there are also log files that combine the information of other log files. The downside is that these files are usually very large. If you have a pretty good idea of where a problem might lie, you might want to opt for the smaller and more specific log file. The one log file that logs pretty much everything on your system is the /var/log/syslog file. The only thing that syslog doesn't log by default are off events. When troubleshooting issues with user machines /var/log/syslog will usually contain the most comprehensive information about your system. \b\par
+{\pntext\f1\'B7\tab}\b0 Luckily, our systems also do a good job of cleaning out log files to make room for new ones. They use something called log rotation to do this. In Linux, the utility to rotate logs is called \b log rotate\b0 . You might want to investigate an event that happened a month ago. You can change your log rotation settings to make sure not to delete events that are that old. \par
+{\pntext\f1\'B7\tab}{{\field{\*\fldinst{HYPERLINK https://manpages.ubuntu.com/manpages/noble/en/man8/logrotate.8.html }}{\fldrslt{https://manpages.ubuntu.com/manpages/noble/en/man8/logrotate.8.html\ul0\cf0}}}}\f0\fs22\par
+{\pntext\f1\'B7\tab}less /var/log/syslog\par
+{\pntext\f1\'B7\tab}Timestamps found in a format like this are referred to as Unix or epoch time. At first, you might be baffled by this. Why would you represent time in this way? Just what exactly is the Unix epoch? The Unix epoch time is used to represent then. It's the number of seconds since midnight on January 1, 1970. A zero hour for Unix-based computers to anchor their concept of time.\par
+{\pntext\f1\'B7\tab}less /var/log/syslog | grep error\par
+{\pntext\f1\'B7\tab}tail -f /var/log/syslog => realtime log viewing.\par
+{\pntext\f1\'B7\tab}\b Operating System Deployment:\b0\par
+{\pntext\f1\'B7\tab}Installing an operating system with a single USB stick, like we did in the very early lessons of this program, can get extremely time-consuming, especially when you need to do it for lots of machines. Fortunately, in the IT world, we use fantastic tools to make our jobs easier. Remember the imaging of machine means to format a machine with an image of another machine. This includes everything from the operating system to the settings.\par
 {\pntext\f1\'B7\tab}\par
 }
  

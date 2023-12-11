@@ -285,6 +285,42 @@ Permissons:\ulnone\b0\par
 {\pntext\f2\'B7\tab}get-process | Sort CPU -descending | Select -first 3 -Property ID,ProcessName,CPU\b0   =>  First, we call the Get-Process command line to obtain all that process information from the operating system. Then we use a pipe to connect the output of that command to the sort command. You might remember pipes from some Linux examples earlier. We sort the output of Get-Process by the CPU column, descending to put the biggest numbers first. Then we pipe that information to the select command. Using select, we picked the first three rows from the output of sort and pick only the property ID, name and CPU and out to display.\b\par
 {\pntext\f2\'B7\tab}Get -Process => \b0 Aliases of the get process => gps and ps like linux ps command\b\par
 {\pntext\f2\'B7\tab}\b0 You can also use the built-in alternate views of the processes available with \b Format-Table,\b0  such as StartTime and Priority, and you can design your own views.\b\par
-{\pntext\f2\'B7\tab}\par
+
+\pard\sa200\sl276\slmult1\par
+Operating Systems in Practice:\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1 Remote Connections on Windows:\par
+{\pntext\f2\'B7\tab}Putty => \b0 open source utility to make remote connections. => SSH protocol support many more.\b\par
+{\pntext\f2\'B7\tab}\b0 Also initialize in the PS by => putty.exe => can provide additional parameters like=> putty.exe -ssh shah@192.131.215.225 22 => plink also used to awake putty\b\par
+{\pntext\f2\'B7\tab}RDP : \b0 RDP provides users with a graphical user interface to remote computers provided the remote computer has enabled incoming RDP connections.\b\par
+{\pntext\f2\'B7\tab}\b0 A client program called the Microsoft terminal services client or mstsc.exe is used to create RDP connections to remote computers.\b\par
+{\pntext\f2\'B7\tab}\b0 This pc => Properties => Remote Connection => to enable it.\b\par
+{\pntext\f2\'B7\tab}\b0 Connecting securely to remote machines is an important task for deploying services. Secure Shell (SSH) was developed in the 1990s to address this issue.\b\par
+{\pntext\f2\'B7\tab}SSH: \b0 Secure Shell (SSH) is a network protocol that gives users a secure way to access a computer over an unsecured network. SSH enables secure remote access to SSH-enabled network systems or devices and automated processes. It also allows for secure remote access to transfer files, use commands and manage network infrastructure.\b\par
+{\pntext\f2\'B7\tab}OpenSSH : \b0 OpenSSH is the open-source version of the Secure Shell (SSH) tools used by administrators of Linux and other non-Windows for cross-platform remote systems management. OpenSSH has been added to Windows (as of autumn 2018) and is included in Windows Server and Windows client.\b\par
+{\pntext\f2\'B7\tab}\b0 An \b SSH client \b0 is a program that establishes secure and authenticated SSH connections to SSH servers. like => PuTTY , SecureCRT , SmarTTY , mRemoteNG, MobaXterm etc.\b\par
+{\pntext\f2\'B7\tab}\b0 The PuTTY package comes with a tool called the PuTTY Secure Copy Client or pscp.exe. You can use it to copy files in a very similar way to the Linux SCP command.\b\par
+{\pntext\f2\'B7\tab}\b0 pscp.exe File_Path user@Address => to copy files on the network from one pc to another.\b\par
+{\pntext\f2\'B7\tab}\b0 share folder option in the window also comes handy when you want to share files.\b\par
+{\pntext\f2\'B7\tab}\b0 net share => utility to share files like share folder using command line.\b\par
+{\pntext\f2\'B7\tab}\b0 Used without parameters, net share displays information about all of the resources that are shared on the local computer. For each resource, the device name(s) or pathname(s) and a descriptive comment are displayed.\b\par
+{\pntext\f2\'B7\tab}\b0 To share a computer's C:\\Data directory with the share name DataShare and include a remark, type: net share DataShare=c:\\Data /remark:"For department 123."\par
+{\pntext\f2\'B7\tab}To stop sharing the DataShare folder you created in the previous example, type: net share DataShare /delete \par
+{\pntext\f2\'B7\tab}To share a computer's C:\\Art List directory with the share name List, type: net share list="c:\\Art List"\b\par
+
+\pard\sa200\sl276\slmult1\ul Logging : System Monitoring \par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\ulnone\b0 A log is like your computer's diary. It records events that happen on your system. What kind of events? Well, pretty much everything like when your system shuts down, when it starts up, when a driver is loaded, when someone logs in. All of these things can be written into a log. It's also written with a lot of detail. Logs tell you the exact time that an event occurred. Who caused the event and more.\b\par
+{\pntext\f2\'B7\tab}\b0 In Windows, the events logged by the operating system are stored in an application called The Event Viewer. Whether you're trying to figure out why a computer game keeps crashing or troubleshooting login or access problems.\b\par
+{\pntext\f2\'B7\tab}\b0 eventvwr.msc or start menu.\b\par
+{\pntext\f2\'B7\tab}\b0 The Event Viewer is a super helpful tool for IT support specialists. It can provide you with a lot of really detailed information about the problems any software or hardware might be experiencing on your system. There's a lot of information in there though, so don't forget about its custom views and filtering capabilities.\b\par
+{\pntext\f2\'B7\tab}Operating System Deployment: (Imaging)\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\b0 Installing an operating system with a single USB stick, like we did in the very early lessons of this program, can get extremely time-consuming, especially when you need to do it for lots of machines. Fortunately, in the IT world, we use fantastic tools to make our jobs easier. Remember the imaging of machine means to format a machine with an image of another machine. This includes everything from the operating system to the settings.\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1 In this reading, you will learn about operating system (OS) deployment methods, including the use of disk cloning. A cloned disk is an identical copy of a hard drive. Cloning is often used when an Enterprise company purchases a large number of identical computers. The IT Support Administrators for the company are responsible for installing and configuring the computers to meet the needs of the company and its network. Disk cloning is used to save time on this type of deployment. IT Administrators will select one of the new computers to install and configure needed items, such as the OS, utilities, tools, network settings, software, drivers, firmware, and more. Then they make a clone of this first hard drive. The cloned disk is used to copy the entire disk image over to the remaining new computers so that the IT Admins do not need to repeat the same installation and configuration steps on each new computer. They may keep a copy of the original disk from this deployment to reimage the systems if a clean OS install is required (e.g., following a virus or malware infection, OS corruption, etc.).  \par
+{\pntext\f2\'B7\tab}Cloned disks have uses beyond deploying OSs. They can be used to test new software and configurations in a lab environment before applying the updates to similar production systems. Cloning can also be used for system migrations, data backups, disk archival, or to make a copy of a hard drive for investigative or auditing purposes.  \par
+
+\pard\sa200\sl276\slmult1\b\par
 }
  
